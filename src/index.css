@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select {
+  outline: none;
+  font-family: inherit;
+}
+
+.resume-preview-container {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-preview-container * {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+@media print {
+  body {
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .resume-preview-container {
+    box-shadow: none !important;
+    border: none !important;
+    page-break-inside: avoid;
+  }
+
+  .resume-preview-container * {
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .resume-preview-container div {
+    page-break-inside: avoid;
+  }
+
+  .print-container {
+    margin: 0 !important;
+    padding: 0.75in !important;
+    width: 100%;
+  }
+
+  @page {
+    margin: 0.75in;
+    size: A4;
+  }
+}
