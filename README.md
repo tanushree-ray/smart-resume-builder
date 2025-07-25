@@ -20,7 +20,7 @@ A modern, customizable resume builder built using React.js, with real-time live 
 
 ## Demo
 
-> Live Demo:
+> Live Demo: https://smart-resume-builder-mu.vercel.app/
 
 ## Tech Stack
 
